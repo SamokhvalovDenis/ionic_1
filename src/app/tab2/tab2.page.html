@@ -1,0 +1,31 @@
+<app-my-header name="Лабораторна робота №2"></app-my-header>
+<ion-content [fullscreen]="true" class="white-bg">
+  <ion-card class="white-card">
+    <ion-card-header>
+      <ion-card-title class="black-text">Завдання №2</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="black-text">
+        На заданому проміжку чисел [a, b] знайдіть суму всіх, які при
+        діленні на 7 дають в остачі 3. Потрібно вивести як самі числа так і результати
+        обрахунку.
+      </p>
+
+      <ion-item class="white-card">
+        <ion-input label="Початок діапазону" labelPlacement="stacked" type="number" [(ngModel)]="range[0]" class="black-text"></ion-input>
+      </ion-item>
+      <ion-item class="white-card">
+        <ion-input label="Кінець діапазону" labelPlacement="stacked" type="number" [(ngModel)]="range[1]" class="black-text"></ion-input>
+      </ion-item>
+      <ion-item class="white-card">
+        <ion-button expand="block" (click)="calculate()">Розрахунок</ion-button>
+      </ion-item>
+      <ion-item class="white-card">
+        <p class="black-text">Числа: {{ numbers.join(', ') }}</p>
+      </ion-item>
+      <ion-item class="white-card">
+        <p class="black-text">Результат обчислення: {{ result }}</p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

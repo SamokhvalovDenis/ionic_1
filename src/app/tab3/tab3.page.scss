@@ -1,0 +1,44 @@
+.white-bg {
+    --background: white;
+  }
+  
+  .white-card {
+    background: white !important; 
+    color: black !important; 
+    box-shadow: none; 
+    border-radius: 0; 
+  }
+  
+  .black-text {
+    color: black !important;
+  }
+  
+  ion-item {
+    --background: white !important; 
+    --color: black !important; 
+  }
+  
+  ion-input {
+    --background: white !important; 
+    --color: black !important; 
+  }
+  
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .matrix-table td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+  }
+  

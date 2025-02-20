@@ -1,0 +1,33 @@
+<app-my-header name="Лабораторна робота №3"></app-my-header>
+
+<ion-content [fullscreen]="true" class="white-bg">
+  <ion-card class="white-card">
+    <ion-card-header>
+      <ion-card-title class="black-text">Завдання №3</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="black-text">
+        Згенерувати матрицю розміром NxN. Виокреміть за допомогою
+        кольору усі додатні елементи, які більше 25.
+      </p>
+
+      <ion-item class="white-card">
+        <ion-input label="Розмір матриці (N)" labelPlacement="stacked" type="number" [(ngModel)]="matrixSize" class="black-text"></ion-input>
+      </ion-item>
+
+      <ion-item class="white-card">
+        <ion-button expand="block" (click)="generateMatrix()">Згенерувати матрицю</ion-button>
+      </ion-item>
+
+      <div *ngIf="matrix.length">
+        <table class="matrix-table">
+          <tr *ngFor="let row of matrix">
+            <td *ngFor="let value of row" [ngClass]="{'highlight': isHighlighted(value)}">
+              {{ value }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,24 @@
+.white-bg {
+  --background: white;
+}
+
+.white-card {
+  background: white !important; 
+  color: black !important; 
+  box-shadow: none; 
+  border-radius: 0; 
+}
+
+.black-text {
+  color: black !important;
+}
+
+ion-item {
+  --background: white !important; 
+  --color: black !important; 
+}
+
+ion-input {
+  --background: white !important; 
+  --color: black !important; 
+}

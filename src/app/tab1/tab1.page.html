@@ -1,0 +1,35 @@
+<app-my-header name="Лабораторна робота №1"></app-my-header>
+
+<ion-content [fullscreen]="true" class="white-bg">
+  <ion-card class="white-card">
+    <ion-card-header>
+      <ion-card-title class="black-text">Завдання №1</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="black-text">
+        Задано три числа. Знайти добуток тих з них, які кратні 10, якщо сума їхніх цифр непарна.
+      </p>
+
+      <ion-item class="white-card">
+        <ion-input label="Перше число" labelPlacement="stacked" type="number" [(ngModel)]="numbers[0]" class="black-text"></ion-input>
+      </ion-item>
+
+      <ion-item class="white-card">
+        <ion-input label="Друге число" labelPlacement="stacked" type="number" [(ngModel)]="numbers[1]" class="black-text"></ion-input>
+      </ion-item>
+
+      <ion-item class="white-card">
+        <ion-input label="Третє число" labelPlacement="stacked" type="number" [(ngModel)]="numbers[2]" class="black-text"></ion-input>
+      </ion-item>
+
+      <ion-item class="white-card">
+        <ion-button expand="block" (click)="calculate()">Розрахунок</ion-button>
+      </ion-item>
+
+      <ion-item class="white-card">
+        <p class="black-text">Результат обчислення: {{ result }}</p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
