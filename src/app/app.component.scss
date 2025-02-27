@@ -1,0 +1,33 @@
+ion-content {
+    --background: white;
+    color: black;
+  }
+  
+  ion-item {
+    --background: white;
+    color: black;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  ion-item:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1); /* Додаємо легкий фон при наведенні */
+  }
+  
+  ion-menu-toggle::part(native) {
+    background: white;
+    color: black;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  ion-menu-toggle::part(native):hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1); /* Додаємо легкий фон при наведенні */
+  }
+  
+
+  ion-list{
+    background: white;
+    color: black;
+  }
+  
